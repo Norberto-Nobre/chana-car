@@ -7,7 +7,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ReportController;
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
 // Rotas públicas para visualização de categorias e veículos
@@ -33,16 +33,16 @@ Route::middleware(['auth'])->group(function () {
     //     // Categorias
     //     Route::apiResource('categories', CategoryController::class);
     //     Route::get('categories/with-vehicles', [CategoryController::class, 'withVehicles']);
-        
+
     //     // Veículos
     //     Route::apiResource('vehicles', VehicleController::class);
-        
+
     //     // Reservas
     //     Route::apiResource('bookings', BookingController::class);
     //     Route::patch('bookings/{id}/approve', [BookingController::class, 'approve']);
     //     Route::patch('bookings/{id}/reject', [BookingController::class, 'reject']);
     //     Route::patch('bookings/{id}/return', [BookingController::class, 'return']);
-        
+
     //     // Relatórios
     //     Route::get('reports/dashboard', [ReportController::class, 'dashboard']);
     //     Route::get('reports/bookings', [ReportController::class, 'bookings']);
