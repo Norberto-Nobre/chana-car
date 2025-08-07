@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contracts\VehicleRepositoryInterface;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 
@@ -15,10 +16,29 @@ class VehicleController extends Controller
     // ✅ Agora retorna uma view Blade ao invés de JSON
     public function index()
     {
-        $vehicles = $this->vehicleRepository->getAll();
+        // $vehicles = $this->vehicleRepository->getAll();
+        $vehicles = $this->vehicleRepository->getAll()->load('category');
+        $categories = Category::with('vehicles')->get();
 
         // Retorna a view resources/views/vehicles/index.blade.php
-        return view('pages.index', compact('vehicles'));
+        return view('pages.index', compact('vehicles', 'categories'));
+    }
+
+    public function carros()
+    {
+        $vehicles = $this->vehicleRepository->getAll()->load('category');
+         $categories = Category::with('vehicles')->get();
+
+        // Retorna a view resources/views/vehicles/carros.blade.php
+        return view('pages.carros', compact('vehicles', 'categories'));
+    }
+
+    public function carroDetalhe(){
+         $vehicles = $this->vehicleRepository->getAll()->load('category');
+         $categories = Category::with('vehicles')->get();
+
+        // Retorna a view resources/views/vehicles/carros.blade.php
+        return view('pages.carro-detalhe', compact('vehicles', 'categories'));
     }
 
     // Continuação dos métodos da API (inalterados)
@@ -41,7 +61,7 @@ class VehicleController extends Controller
 
         try {
             $vehicle = $this->vehicleRepository->create($request->all());
-            
+
             return response()->json([
                 'success' => true,
                 'message' => 'Veículo criado com sucesso',
@@ -58,7 +78,7 @@ class VehicleController extends Controller
     public function show(int $id): JsonResponse
     {
         $vehicle = $this->vehicleRepository->find($id);
-        
+
         if (!$vehicle) {
             return response()->json([
                 'success' => false,
@@ -91,7 +111,7 @@ class VehicleController extends Controller
 
         try {
             $updated = $this->vehicleRepository->update($id, $request->all());
-            
+
             if (!$updated) {
                 return response()->json([
                     'success' => false,
@@ -115,7 +135,7 @@ class VehicleController extends Controller
     {
         try {
             $deleted = $this->vehicleRepository->delete($id);
-            
+
             if (!$deleted) {
                 return response()->json([
                     'success' => false,
@@ -138,7 +158,7 @@ class VehicleController extends Controller
     public function available(): JsonResponse
     {
         $vehicles = $this->vehicleRepository->getAvailable();
-        
+
         return response()->json([
             'success' => true,
             'data' => $vehicles
@@ -148,7 +168,7 @@ class VehicleController extends Controller
     public function byCategory(int $categoryId): JsonResponse
     {
         $vehicles = $this->vehicleRepository->getByCategory($categoryId);
-        
+
         return response()->json([
             'success' => true,
             'data' => $vehicles
@@ -158,7 +178,7 @@ class VehicleController extends Controller
     public function availableByCategory(int $categoryId): JsonResponse
     {
         $vehicles = $this->vehicleRepository->getAvailableByCategory($categoryId);
-        
+
         return response()->json([
             'success' => true,
             'data' => $vehicles

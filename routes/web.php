@@ -11,6 +11,9 @@ use App\Http\Controllers\ReportController;
 
 // ✅ Nova rota pública para exibir veículos em uma view Blade
 Route::get('/', [VehicleController::class, 'index'])->name('vehicles.index');
+Route::get('/carros', [VehicleController::class, 'carros'])->name('vehicles.carros');
+Route::get('/escolher-carro', [VehicleController::class, 'carros'])->name('vehicles.escolher-carro');
+Route::get('/carro-detalhe', [VehicleController::class, 'carroDetalhe'])->name('vehicles.carros-detalhes');
 
 // Rotas públicas da API (formato JSON)
 Route::prefix('api')->group(function () {

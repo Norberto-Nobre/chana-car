@@ -32,30 +32,30 @@ class VehicleResource extends Resource
                             ->options(Category::active()->pluck('name', 'id'))
                             ->required()
                             ->searchable(),
-                        
+
                         Forms\Components\TextInput::make('brand')
                             ->label('Marca')
                             ->required()
                             ->maxLength(255),
-                        
+
                         Forms\Components\TextInput::make('model')
                             ->label('Modelo')
                             ->required()
                             ->maxLength(255),
-                        
+
                         Forms\Components\TextInput::make('year')
                             ->label('Ano')
                             ->required()
                             ->numeric()
                             ->minValue(1900)
                             ->maxValue(date('Y') + 1),
-                        
+
                         Forms\Components\TextInput::make('plate')
                             ->label('Placa')
                             ->required()
                             ->maxLength(20)
                             ->unique(ignoreRecord: true),
-                        
+
                         Forms\Components\TextInput::make('km')
                             ->label('Quilometragem')
                             ->numeric()
@@ -63,7 +63,7 @@ class VehicleResource extends Resource
                             ->default(0),
                     ])
                     ->columns(2),
-                
+
                 Forms\Components\Section::make('Especificações')
                     ->schema([
                         Forms\Components\Select::make('type')
@@ -76,7 +76,7 @@ class VehicleResource extends Resource
                                 'Convertible' => 'Conversível',
                             ])
                             ->required(),
-                        
+
                         Forms\Components\Select::make('fuel')
                             ->label('Combustível')
                             ->options([
@@ -86,26 +86,26 @@ class VehicleResource extends Resource
                                 'hybrid' => 'Híbrido',
                             ])
                             ->required(),
-                        
+
                         Forms\Components\TextInput::make('color')
                             ->label('Cor')
                             ->required()
                             ->maxLength(50),
-                        
+
                         Forms\Components\TextInput::make('doors')
                             ->label('Portas')
                             ->required()
                             ->numeric()
                             ->minValue(2)
                             ->maxValue(8),
-                        
+
                         Forms\Components\TextInput::make('price_per_day')
                             ->label('Preço por Dia (AOA)')
                             ->required()
                             ->numeric()
                             ->minValue(0)
                             ->prefix('AOA'),
-                        
+
                         Forms\Components\Select::make('status')
                             ->label('Status')
                             ->options([
@@ -117,7 +117,7 @@ class VehicleResource extends Resource
                             ->required(),
                     ])
                     ->columns(2),
-                
+
                 Forms\Components\Section::make('Imagens')
                     ->schema([
                         Forms\Components\FileUpload::make('images')
@@ -134,26 +134,30 @@ class VehicleResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('image')
+                    ->label('Imagem')
+                    ->circular()
+                    ->size(40),
                 Tables\Columns\TextColumn::make('category.name')
                     ->label('Categoria')
                     ->searchable()
                     ->sortable(),
-                
+
                 Tables\Columns\TextColumn::make('full_name')
                     ->label('Veículo')
                     ->searchable(['brand', 'model'])
                     ->sortable(['brand', 'model']),
-                
+
                 Tables\Columns\TextColumn::make('plate')
                     ->label('Placa')
                     ->searchable()
                     ->sortable(),
-                
+
                 Tables\Columns\TextColumn::make('type')
                     ->label('Tipo')
                     ->badge()
                     ->sortable(),
-                
+
                 Tables\Columns\BadgeColumn::make('status')
                     ->label('Status')
                     ->colors([
@@ -166,17 +170,17 @@ class VehicleResource extends Resource
                         'in_use' => 'Em Uso',
                         'maintenance' => 'Manutenção',
                     }),
-                
+
                 Tables\Columns\TextColumn::make('price_per_day')
                     ->label('Preço/Dia')
                     ->money('AOA')
                     ->sortable(),
-                
+
                 Tables\Columns\TextColumn::make('bookings_count')
                     ->label('Reservas')
                     ->counts('bookings')
                     ->sortable(),
-                
+
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Criado em')
                     ->dateTime('d/m/Y H:i')
@@ -187,7 +191,7 @@ class VehicleResource extends Resource
                 Tables\Filters\SelectFilter::make('category_id')
                     ->label('Categoria')
                     ->options(Category::active()->pluck('name', 'id')),
-                
+
                 Tables\Filters\SelectFilter::make('status')
                     ->label('Status')
                     ->options([
@@ -195,7 +199,7 @@ class VehicleResource extends Resource
                         'in_use' => 'Em Uso',
                         'maintenance' => 'Manutenção',
                     ]),
-                
+
                 Tables\Filters\SelectFilter::make('type')
                     ->label('Tipo')
                     ->options([

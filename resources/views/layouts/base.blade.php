@@ -34,16 +34,16 @@
         <div class="container-fluid">
             <div class="row mb-16 row-gap-4">
                 <div class="col-lg-3">
-                    <div class="txt-block"> 
+                    <div class="txt-block">
                         <a href="index.html">
-                            <img src="assets/media/footer/logo.png" alt="logo">
-                            <img src="assets/media/footer/Frame-173.png" alt="Frame">
+                            <img src="{{asset('template/assets/media/footer/logo.png')}}" alt="logo">
+                            <img src="{{asset('template/assets/media/user/chana-ogo.png')}}" alt="Frame" style="width: 100px;">
                         </a>
                     </div>
                     <p class="mb-32">Lorem ipsum dolor sit amet consectetur. Tellus varius senectus quis tellus ipsum
                         nunc
                         dictum sed. Nunc nam neque aliquam quis purus.</p>
-                    <h6 class="white mb-16">Subscribe To Our Newsletter</h6>
+                    <h6 class="white mb-16">Assine nossa newsletter</h6>
                     <form action="index.html" class="newsletter-form">
                         <input type="email" name="email" id="eMail" class="form-input"
                             placeholder=" Your email address">
@@ -109,44 +109,44 @@
                         <ul class="unstyled">
                             <li class="mb-16">
                                 <div class="contact">
-                                    <img src="assets/media/footer/uil-outgoing-call.png" alt="call-logo">
+                                    <img src="{{asset('template/assets/media/footer/uil-outgoing-call.png')}}" alt="call-logo">
                                     <a href="tel:+12345678">+123 (4567) -890</a>
                                 </div>
                             </li>
                             <li class="mb-16">
                                 <div class="contact">
-                                    <img src="assets/media/footer/uil-map-marker.png" alt="logo">
+                                    <img src="{{asset('template/assets/media/footer/uil-map-marker.png')}}" alt="logo">
                                     <p>Main Street, New Jersey</p>
                                 </div>
                             </li>
                             <li class="mb-24">
                                 <div class="contact">
-                                    <img src="assets/media/footer/uil-envelope.png" alt="logo">
+                                    <img src="{{asset('template/assets/media/footer/uil-envelope.png')}}" alt="logo">
                                     <a href="mailto:example@company.com">example@company.com</a>
                                 </div>
                             </li>
                         </ul>
-                        <h5>Follow us!</h5>
+                        <h5>Siga-nos!</h5>
                         <div class="social-icons mb-12">
                             <ul class="d-flex unstyled gap-12">
                                 <li>
                                     <a href="">
-                                        <img src="assets/media/footer/Instagram.png" alt="logo">
+                                        <img src="{{asset('template/assets/media/footer/Instagram.png')}}" alt="logo">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="assets/media/footer/Twitter.png" alt="logo">
+                                        <img src="{{asset('template/assets/media/footer/Twitter.png')}}" alt="logo">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="assets/media/footer/Dribbble.png" alt="logo">
+                                        <img src="{{asset('template/assets/media/footer/Dribbble.png')}}" alt="logo">
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <img src="assets/media/footer/Linkedin.png " alt="logo">
+                                        <img src="{{asset('template/assets/media/footer/Linkedin.png')}}" alt="logo">
                                     </a>
                                 </li>
                             </ul>
@@ -156,8 +156,8 @@
             </div>
             <div class="hr-line  bg-light-gray"></div>
             <p class="mt-32 pb-32 text-center">@2025 All Rights Copyright <span
-                    class="fw-700 color-sec">RapidRide.</span>
-                Design & Developed By UIPARADOX</p>
+                    class="fw-700 color-sec">Chana Car.</span>
+                By EGATECLOUD</p>
         </div>
     </footer>
     <!--Footer-end -->
@@ -171,7 +171,7 @@
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/media/user/logo.png" alt=""></a>
+                <a href="index.html" aria-label="logo image"><img src="{{asset('template/')}}assets/media/user/logo.png" alt=""></a>
             </div>
             <div class="mobile-nav__container"></div>
             <ul class="mobile-nav__contact list-unstyled">
