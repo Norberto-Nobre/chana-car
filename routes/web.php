@@ -10,7 +10,6 @@ use App\Http\Controllers\ReportController;
 // Route::get('/', [HomeController::class, 'index']);
 
 // ✅ Nova rota pública para exibir veículos em uma view Blade
-// Route::get('/', [HomeController::class, 'index']);
 Route::get('/', [VehicleController::class, 'index'])->name('vehicles.index');
 
 // Rotas públicas da API (formato JSON)
