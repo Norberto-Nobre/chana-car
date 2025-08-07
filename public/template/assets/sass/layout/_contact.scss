@@ -1,0 +1,110 @@
+.title-banner-5 {
+    align-items: center;
+    display: grid;
+    width: 100%;
+    background: url("../media/hero/about.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    .txt-block {
+        i {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        a {
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .title-wrapper {
+        padding-top: clamp(64px, 5vw, 150px);
+        .title-content {
+            @include media-query(490px) {
+                text-align: center;
+                padding: clamp(40px, 9.796vw, 64px) 0;
+            }
+        }
+    }
+}
+.files {
+    margin-top: -100px;
+    form{
+        .topic {
+            padding: clamp(32px,2.5vw,33px);
+            align-items: flex-start;
+            gap: 10px;
+            background:$accent-3;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+            h6 {
+                color: $black-2;
+            }
+            label {
+                color: $black-2;
+                text-align: center;
+                font-family: Khula;
+                font-size: clamp(12px,0.938vw,24px);
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                cursor: pointer;
+                padding: 12px 24px;
+                border-radius: 32px;
+                background: $accent-4;
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
+                transition: $transition;
+            }
+            input:checked + label {
+                background-color: $accent-1;
+                color: $accent-2;
+            }
+            h2 {
+                color: $black-2;
+            }
+            input {
+                padding: clamp(12px,0.833vw,24px);
+                width: 100%;
+                border-radius: 8px;
+                border: 1px solid  $light-gray;
+                background:$accent-3;
+                &:focus {
+                }
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.cards {
+    .banner {
+        text-align: center;
+        padding: clamp(24px,1.667vw,40px);
+        border-radius: 16px;
+        background: $accent-4;
+        h5 {
+            color: $accent-1;
+        }
+        i {
+            font-size: 28px;
+            color: $accent-1;
+        }
+        p {
+            color: $light-gray;
+            text-align: center;
+        }
+        &:hover {
+            transition: $transition;
+            background: $accent-1;
+            h5 {
+                color: $accent-3;
+            }
+            p {
+                color: $accent-3;
+            }
+            i {
+                color: $accent-3;
+            }
+        }
+    }
+}

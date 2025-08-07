@@ -1,0 +1,71 @@
+
+.testimonials-section{
+    .testimonials-wrapper{
+        .testimonials-slider{
+            margin: 0 -12px;
+            .slick-dots{
+                position: unset;
+                display: flex;
+                justify-content: center;
+                margin-top: clamp(24px, 1.667vw, 48px);
+
+                li{
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    background: transparent;
+                    border: 1px solid $accent-1;
+                    transition: $transition;
+                    @include media-query(490px){
+                        width: 14px;
+                        height: 14px;
+                    }
+    
+                    &.slick-active{
+                        background-color: $accent-1;
+                        border: 3px solid $accent-3;
+                        outline: 1px solid $accent-1;
+                    }
+                    button{
+                        padding: 0;
+                        color: $white;
+                        font-size: 0; /* 18px */
+                        &:before{
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+        .testimonials-block{
+            padding: clamp(16px, 1.25vw, 32px);
+            border: 1px solid $lightest-gray;
+            margin: 0 12px;
+            .image-box{
+                img{
+                    @include media-query(490px){
+                        width: 16%;
+                    }
+                }
+            }
+            .user-name{
+                width: clamp(250px, 16.667vw, 500px);
+            }
+            .rating-stars{
+                margin-top: -2px;
+                @include media-query(490px){
+                    margin-top: -4px;
+                }
+                svg{
+                    @include media-query(490px){
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

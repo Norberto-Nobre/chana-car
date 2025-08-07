@@ -1,0 +1,24 @@
+.choose {
+    .heading {
+        h2 {
+            span {
+                color: $accent-1;
+            }
+        }
+    }
+    .block{
+        align-items: center;
+       margin-bottom: 12px;
+        gap: 11px;
+        img{
+            height: 24px;
+            @include media-query(768px){
+                height: 19px;
+            }
+        }
+
+        h5{
+            color: $black-2;
+        }
+    }
+}

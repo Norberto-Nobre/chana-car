@@ -1,0 +1,27 @@
+.features{
+    .info {
+        padding:  clamp(14px,1.667vw,40px) clamp(48px, 4.271vw, 100px);
+        border-radius: 16px;
+        background: $accent-4;
+        @include media-query(575px) {
+            padding: 16px;
+        }
+        &.active {
+            background:$accent-1;
+            h1 {
+                text-align: center;
+                color: $accent-3;
+            }
+            p {
+                color: $accent-3;
+            }
+        }
+        p {
+            text-align: center;
+           
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+}

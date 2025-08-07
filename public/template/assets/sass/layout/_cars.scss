@@ -1,0 +1,85 @@
+.vehicle-card {
+    padding: 19px;
+    width: 100%;
+    border-radius: 16px;
+    background: $accent-4;
+    transition: $transition;
+    .title {
+        font-size: 29px;
+        transition: $transition;
+        color: $black-2;
+        margin-bottom: 4px;
+        @include media-query(576px) {
+            font-size: 20px;
+        }
+    }
+    .icons {
+        transition: $transition;
+        gap: 7px;
+        display: flex;
+        margin-bottom: 12px;
+    }
+    p {
+        transition: $transition;
+        color: $black-2;
+    }
+    h5 {
+        transition: $transition;
+        color: $black-2;
+        display: flex;
+    }
+    .bottom-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3 {
+            color: $black-2;
+            font-size: 17px;
+        }
+        p {
+            margin-bottom: 4px;
+        }
+    }
+    &:hover {
+        transition: $transition;
+        background: $accent-1;
+        .cus-btn {
+            color: $accent-1;
+            background: $accent-3;
+            span {
+                color: $accent-1;
+                svg {
+                    path {
+                        fill: $accent-1;
+                    }
+                }
+            }
+        }
+        .title {
+            transition: $transition;
+            color: $accent-3;
+        }
+        p {
+            transition: $transition;
+            color: $accent-3;
+        }
+        .icons {
+            transition: $transition;
+            color:$accent-3;
+        }
+        h5 {
+            transition: $transition;
+            color: $accent-3;
+        }
+        .bottom-row {
+            h3 {
+                transition: $transition;
+                color:$accent-3;
+            }
+        }
+    }
+    p {
+        transition: $transition;
+        color: $black-2;
+    }
+}

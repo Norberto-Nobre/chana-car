@@ -1,0 +1,168 @@
+/*-------------------------
+  Form Styling
+-------------------------*/
+
+textarea.form-control {
+  min-height: 130px;
+  max-height: 150px;
+
+  @media (max-width: 578px) {
+    min-height: 80px;
+    max-height: 80px;
+  }
+}
+
+.form-control {
+  padding: 16px 16px;
+  padding-left: 44px;
+  border-radius: $br-8;
+  border: 1px solid $light-gray;
+  background: transparent;
+  font-family: $font-primary;
+  font-size: 15px; /* 14px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  color: $black;
+  box-shadow: none;
+
+  @include media-query(430px) {
+    padding-right: 54px;
+  }
+  &.form-control-2 {
+    padding-left: 16px;
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline: 0;
+    color: $black !important;
+    background: transparent;
+  }
+
+  &:hover {
+    color: $black !important;
+  }
+
+  &::placeholder {
+    color: $dark-gray;
+    opacity: 1;
+  }
+  svg {
+    position: absolute;
+    top: 16px;
+    left: 18px;
+  }
+}
+.input-block {
+  border-radius: 0px;
+  background: #ecf3f9;
+  position: relative;
+  svg,
+  i {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  &.error {
+    color: #ff0000;
+  }
+}
+
+.cus-checkBox {
+  input {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    &::before {
+      content: "\f0c8";
+      font-family: $font-awesome;
+      color: $medium-black;
+      font-size: clamp(16px, 1.042vw, 20px);
+      font-weight: 300;
+    }
+  }
+
+  input[type="checkbox"]:checked {
+    + label {
+      &::before {
+        content: "\f14a";
+        color: $accent-1;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.material-checkbox {
+  display: flex;
+  font-size: 18px;
+  color: #5D5D5D;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 2px solid $accent-1;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  input[type="checkbox"]:checked ~ .checkmark {
+    background-color:$accent-1;
+    border-color: $accent-1;
+  }
+
+  input[type="checkbox"]:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  input[type="checkbox"]:focus ~ .checkmark {
+    box-shadow: 0 0 0 2px #dfec5065;
+  }
+
+  &:hover input[type="checkbox"] ~ .checkmark {
+    border-color: $accent-1;
+  }
+
+  input[type="checkbox"]:disabled ~ .checkmark {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  input[type="checkbox"]:disabled ~ .checkmark:hover {
+    border-color: $accent-1;
+  }
+}

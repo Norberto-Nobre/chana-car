@@ -1,0 +1,26 @@
+.ride {
+    .heads{
+        gap: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+            .search-bar{
+                color:$accent-1;
+                border: none;
+                display: flex;
+                padding: 16px;
+                align-items: center;
+                gap: 10px;
+                border-radius: 8px;
+                background: #ecf3f9;
+                &:focus {
+                    border: none;
+                }
+                &:focus-visible {
+                    border: none;
+                    outline: none;
+                }
+            }
+       }
+}

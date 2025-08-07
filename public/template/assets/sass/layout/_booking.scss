@@ -1,0 +1,544 @@
+.booking {
+  .input-type {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    padding: clamp(15px, 0.938vw, 22px) clamp(20px, 1.25vw, 25px);
+    border-radius: 8px;
+    background-color: $accent-4;
+    position: relative;
+
+    @include media-query(490px) {
+      flex-direction: column;
+    }
+
+    .line-img {
+      display: flex;
+      flex-shrink: 0;
+
+      @include media-query(490px) {
+        display: none;
+      }
+    }
+
+    .input-box {
+      position: relative;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    a {
+      text-align: center;
+    }
+
+    button {
+      margin-top: 22px;
+      text-align: center;
+    }
+
+    input {
+      background: transparent;
+      width: 100%;
+      border: none;
+      padding: 0;
+      padding-top: 6px;
+
+      &:focus {
+        border: none;
+        background: transparent;
+      }
+
+      &:focus-visible {
+        border: none;
+        outline: none;
+        background: transparent;
+      }
+    }
+  }
+
+  .cus-btn {
+    height: 45px;
+    align-items: center;
+    padding: 0 32px;
+  }
+}
+
+.booking-form {
+  background: $accent-4;
+
+  .txt-block {
+    display: flex;
+    padding: clamp(18px, 1.458vw, 30px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media-query(492px) {
+      padding: 28px 0px;
+    }
+
+    h2 {
+      color: $black-2;
+    }
+
+    p {
+      margin-bottom: 22px;
+      color: $light-gray;
+      text-align: center;
+    }
+
+    input {
+      border: 0px;
+      margin-bottom: 22px;
+      width: 100%;
+      padding: clamp(14px, 1.042vw, 30px) clamp(16px, 1.25vw, 30px);
+      border-radius: 12px;
+      background: $accent-3;
+
+    }
+
+    select {
+      border: 0px;
+      margin-bottom: 22px;
+      padding: 20px;
+      width: 100%;
+      border-radius: 12px;
+      background: $accent-3;
+    }
+
+    .input-group {
+      position: relative;
+
+      display: flex;
+
+      img,
+      svg,
+      i {
+        position: absolute;
+        right: 17px;
+        top: 17px;
+
+        position: absolute;
+        top: clamp(17px, 0.938vw, 32px);
+        right: clamp(16px, 0.885vw, 32px);
+        width: clamp(16px, 1.042vw, 32px);
+        height: clamp(16px, 1.042vw, 32px);
+
+        @include media-query(1024px) {
+          top: 13px;
+        }
+      }
+    }
+  }
+
+  form {
+
+    input,
+    select {
+      width: 100%;
+      border: none;
+
+      &:focus {
+        border: none;
+      }
+
+      &:focus-visible {
+        border: none;
+        outline: none;
+      }
+    }
+
+    .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n + 3),
+    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-control,
+    .input-group:not(.has-validation)>.form-floating:not(:last-child)>.form-select,
+    .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+      border-top-right-radius: 12px !important;
+      border-bottom-right-radius: 12px !important;
+    }
+  }
+}
+
+.booking-2 {
+  .steptwo {
+    display: none;
+  }
+
+  .booking-card {
+    align-items: center;
+    border-radius: 10px;
+
+    .booking-box {
+      border-radius: 10px;
+      padding: clamp(12px, 0.833vw, 30px) clamp(20px, 1.667vw, 30px);
+    }
+
+    .booking-box-2 {
+      border-radius: 10px;
+      padding: clamp(16px, 1.25vw, 32px) clamp(16px, 1.667vw, 32px) clamp(16px, 0.833vw, 32px);
+
+      .quantity-wrap {
+        align-items: center;
+        display: inline-flex;
+        padding: 8px;
+        border-radius: 8px;
+
+        @include media-query(820px) {
+          padding: 2px 8px;
+        }
+
+        input {
+          height: clamp(36px, 2.5vw, 60px);
+          width: clamp(36px, 2.5vw, 60px);
+          border: none;
+          border-radius: 0px;
+          text-align: center;
+          font-weight: 500;
+          font-size: 21px;
+          background-color: transparent;
+          color: $black-2;
+          padding: 0 4px;
+
+          @media (max-width: 992px) {
+            font-size: 20x;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 18x;
+          }
+
+          @media (max-width: 575px) {
+            font-size: 17px;
+          }
+
+          &:focus-visible {
+            outline: none;
+          }
+
+          &.decrement {
+            font-size: 35px;
+            color: $black-2;
+            border-radius: 5px;
+            background: $accent-4;
+            display: flex;
+            padding: clamp(10px, 0.729vw, 30px) clamp(11px, 0.833vw, 30px);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              color: $accent-3;
+              background-color: $accent-1;
+            }
+          }
+
+          &.increment {
+            color: $accent-3;
+            font-size: 31px;
+            color: $black-2;
+            border-radius: 5px;
+            background: $accent-4;
+            display: flex;
+            padding: clamp(10px, 0.729vw, 30px) clamp(11px, 0.833vw, 30px);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              color: $accent-3;
+              background-color: $accent-1;
+            }
+          }
+        }
+
+        &.number {
+          font-size: 21pxs;
+          font-weight: 500;
+          color: $black-2;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.booking-card-2 {
+  border-radius: 10px;
+  padding: clamp(20px, 1.25vw, 32px);
+  border-radius: 15px;
+  background: $accent-3;
+
+  .form {
+    .wrapper-dropdown {
+      position: relative;
+      display: inline-block;
+      width: fit-content;
+      text-align: left;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+      background-color: $accent-4;
+      width: 100%;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      .selected-display {
+        font-weight: 500;
+        color: #555555;
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        margin-top: -2px;
+        border-width: 6px 6px 0 6px;
+        border-style: solid;
+        border-color: #fff transparent;
+      }
+
+      .topbar-dropdown {
+        width: max-content;
+        background: $white;
+        transition: 0.3s;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        z-index: 99;
+        border-radius: 5px;
+        box-shadow: inherit;
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        -ms-transform-origin: top;
+        transform-origin: top;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        opacity: 0;
+        visibility: hidden;
+
+        @include media-query(490px) {
+          top: 130%;
+          left: -16px;
+        }
+
+        li {
+          background-color: $accent-3;
+          padding: 0 15px;
+          color: $accent-1;
+          line-height: 45px;
+          border-radius: 0;
+          overflow: hidden;
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &:hover {
+            background-color: $accent-1;
+            color: $black;
+          }
+        }
+      }
+
+      &.active {
+        .topbar-dropdown {
+          width: 100%;
+          opacity: 1;
+          visibility: visible;
+          border-radius: 5px;
+        }
+      }
+
+      .scrollable-menu {
+        height: auto;
+        max-height: 200px;
+        overflow-x: hidden;
+      }
+
+      .arrow {
+        float: right;
+        rotate: 180deg;
+      }
+
+      svg {
+        transition: all 0.3s;
+      }
+
+      .rotated {
+        transform: rotate(-180deg);
+      }
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      background: $accent-4;
+      border-radius: 6px;
+      padding: 16px;
+
+      &:focus {
+        border: none;
+      }
+
+      &:focus-visible {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+.booking-card-3 {
+  border-radius: 10px;
+  padding: clamp(20px, 1.25vw, 32px);
+  border-radius: 15px;
+  background: $accent-3;
+
+  P {
+    span {
+      color: $accent-1;
+    }
+  }
+}
+
+.booking-card-4 {
+  border-radius: 10px;
+  padding: clamp(25px, 2.083vw, 50px) clamp(16px, 1.25vw, 36px);
+}
+
+form {
+  .booking-card-5 {
+    border-radius: 10px;
+    padding: clamp(25px, 2.083vw, 50px) clamp(16px, 1.25vw, 36px);
+
+    .card {
+      padding: clamp(24px, 1.667vw, 40px);
+      background-color: $lightest-gray;
+
+      &:hover {
+        color: $accent-3;
+        background-color: $accent-1;
+
+        h5 {
+          color: $accent-3;
+        }
+      }
+    }
+
+    input {
+      border-radius: 5px;
+      padding: clamp(16px, 0.833vw, 30px);
+      width: 100%;
+      border: none;
+      background-color: $accent-4;
+
+      &:focus {
+        border: none;
+      }
+
+      &:focus-visible {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+.side-bar {
+  .vehicle-details {
+    border-radius: 10px;
+    padding: clamp(12px, 0.833vw, 30px) clamp(20px, 1.667vw, 30px);
+  }
+
+  .vehicle-details-2 {
+    border-radius: 10px;
+    padding: clamp(16px, 1.25vw, 32px) clamp(16px, 1.667vw, 32px) clamp(16px, 0.833vw, 32px);
+
+    .faq-block {
+      padding-right: 26px;
+      background: $white;
+      margin-bottom: clamp(14px, 1.25vw, 32px);
+
+      .accordion-button {
+        margin: 0;
+        position: relative;
+        padding: 0;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 130%;
+
+        @media (max-width: 992px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 19px;
+        }
+
+        @media (max-width: 575px) {
+          font-size: 18px;
+        }
+
+        @include media-query(490px) {
+          padding-right: 40px;
+        }
+
+        &.collapsed {
+          border-radius: 0px;
+          padding: 0;
+          background: none;
+          margin: 0;
+
+          @include media-query(490px) {
+            padding-right: 40px;
+          }
+
+          &::after {
+            background-image: none !important;
+            color: $light-black;
+            content: "\f078";
+            font-family: $font-awesome;
+          }
+        }
+
+        &:not(.collapsed) {
+          justify-content: end;
+          padding-right: 31px;
+          color: $black-2;
+          background: transparent;
+          border: none;
+          box-shadow: none;
+        }
+
+        &:focus {
+          border: none;
+          box-shadow: none;
+        }
+
+        &::after {
+          position: absolute;
+          right: -32px;
+          content: "\f077";
+          font-family: $font-awesome;
+          background-image: none !important;
+          position: absolute;
+          right: 0;
+          font-weight: 300;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

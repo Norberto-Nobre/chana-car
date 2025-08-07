@@ -12,16 +12,16 @@ class VehicleController extends Controller
         private VehicleRepositoryInterface $vehicleRepository
     ) {}
 
-    public function index(): JsonResponse
+    // ✅ Agora retorna uma view Blade ao invés de JSON
+    public function index()
     {
         $vehicles = $this->vehicleRepository->getAll();
-        
-        return response()->json([
-            'success' => true,
-            'data' => $vehicles
-        ]);
+
+        // Retorna a view resources/views/vehicles/index.blade.php
+        return view('pages.index', compact('vehicles'));
     }
 
+    // Continuação dos métodos da API (inalterados)
     public function store(Request $request): JsonResponse
     {
         $request->validate([

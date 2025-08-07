@@ -1,0 +1,68 @@
+.testimonials {
+    .reviews {
+        .slick-track > [class*="col"] {
+            -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 100%;
+            padding-right: calc(var(--bs-gutter-x) / 2);
+            padding-left: calc(var(--bs-gutter-x) / 2);
+            @media (max-width: 575px) {
+                padding-right: calc(var(--bs-gutter-x) * 0.25);
+                padding-left: calc(var(--bs-gutter-x) * 0.25);
+            }
+        }
+        .txt {
+            margin-bottom: 22px;
+            h1 {
+                margin-bottom: 12px;
+                color: $black-2;
+            }
+            p {
+                color:  $light-gray;
+            }
+        }
+        .review-card {
+            text-align: center;
+            .img-block {
+                width: 230px;
+                height: 230px;
+                z-index: 5;
+                position: relative;
+                margin: 0 auto;
+                @include media-query(575px) {
+                    width: 200px;
+                    height: 200px;
+                }
+                img {
+                    border-radius: 50%;
+                    border: 15px solid #fafafa;
+                }
+            }
+            .text-block {
+                width: 100%;
+                margin-top: -92px;
+                position: relative;
+                background: $accent-4;
+                padding: clamp(100px,6.458vw,150px) clamp(14px,0.833vw,20px)  clamp(50px,3.333vw,30px);
+                padding: 124px 16px 64px;
+                border-radius: 24px;
+                text-align: center;
+                @include media-query(575px) {
+                    padding: 130px 16px 48px;
+                }
+                h6 {
+                    margin-bottom: 10px;
+                    color: $black-2;
+                }
+                p {
+                    color:  $light-gray;
+                }
+                img {
+                    margin: 0 auto 15px;
+                }
+            }
+        }
+    }
+}

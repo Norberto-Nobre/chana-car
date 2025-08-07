@@ -1,0 +1,87 @@
+.title-banner {
+    align-items: center;
+    display: grid;
+    width: 100%;
+    background: url("../media/hero/about.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: clamp(250px,20.833vw,600px);
+        .txt{
+            i {
+                font-weight: 400;
+                font-size: 14px;
+            }
+            a {
+                &:hover {
+                    color: $accent-3;
+                }
+            }
+        }
+        .title-wrapper {
+            padding-top: clamp(64px, 5vw, 150px);
+            .title-content {
+                @include media-query(490px) {
+                    text-align: center;
+                    padding: clamp(40px, 9.796vw, 64px) 0;
+                }
+            }
+        }
+    }
+.title-banner-2 {
+    align-items: center;
+    display: grid;
+    width: 100%;
+    background: url("../media/hero/about-2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: clamp(250px,20.833vw,600px);
+    .txt-block {
+        i {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        a {
+            &:hover {
+                color: $accent-3;
+            }
+        }
+    }
+    .title-wrapper {
+        padding-top: clamp(64px, 5vw, 150px);
+        .title-content {
+            @include media-query(490px) {
+                text-align: center;
+                padding: clamp(40px, 9.796vw, 64px) 0;
+            }
+        }
+    }
+}
+.title-banner-3 {
+    align-items: center;
+    display: grid;
+    width: 100%;
+    background: url("../media/hero/about-3.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: clamp(250px,20.833vw,600px);
+    .txt{
+        i {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        a {
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .title-wrapper {
+        padding-top: clamp(64px, 5vw, 150px);
+        .title-content {
+            @include media-query(490px) {
+                text-align: center;
+                padding: clamp(40px, 9.796vw, 64px) 0;
+            }
+        }
+    }
+}

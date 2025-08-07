@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Teach Me || E-Learning HTML Template">
+
+    <title>Car rental</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/user/favicon.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/smoothScorllbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+
+<body class="x-hidden">
+
+    <!-- PRELOADER START -->
+    <div id="preloader">
+        <div class="spinner"></div>
+
+        <div id="content"></div>
+    </div>
+    <!-- PRELOADER END -->
+
+    <!-- Main Wrapper Start -->
+
+    <!-- HEADER MENU START -->
+    <header class="header my-40">
+        <div class="container-fluid">
+            <nav class="navigation d-flex align-items-center justify-content-between">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="assets/media/user/logo.png" alt="/logo" class="header-logo">
+                </a>
+                <div class="menu-button-right">
+                    <div class="main-menu__nav">
+                        <ul class="main-menu__list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);">Rental</a>
+                                <ul>
+                                    <li><a href="rental.html">Rental</a></li>
+                                    <li><a href="rental-sidebar.html">Rental sidebar</a></li>
+                                    <li><a href="vehicle-details.html">Vehicle details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);">Booking</a>
+                                <ul>
+                                    <li><a href="booking.html">Booking</a></li>
+                                    <li><a href="book-now.html">Book now</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);">Blogs</a>
+                                <ul>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="blogs-details.html">Blogs details</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-menu__right">
+                    <div class="search-heart-icon d-md-flex d-none align-items-center gap-24">
+                        <a href="book-now.html" class="cus-btn">
+                            <span class="btn-text">
+                                Book now
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                </svg>
+                            </span>
+                            <span>
+                                Book now
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <a href="#" class="d-xl-none d-flex main-menu__toggler mobile-nav__toggler">
+                        <i class="fa-light fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER MENU END -->
+
+    <!-- About-area start -->
+    <section class="title-banner">
+        <div class="txt">
+            <h2 class="white text-center">About Us</h2>
+            <div class="txt-block text-center white">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-greater-than"></i>
+                <a href="about.html">About us</a>
+            </div>
+        </div>
+    </section>
+    <!-- About-area start  end -->
+
+    <!--title start  -->
+    <section class="about my-80">
+        <div class="container-fluid">
+            <div class="txt">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <h2 class=" text-center black-2 mb-48">Unveiling the Story Behind RapidRide<br><span>RapidRide</span> Car Rental</h2>
+                        <h6 class="mb-24">what we offer</h6>
+                        <ul class="offers">
+                            <li>
+                                <img src="assets/media/icons/uil-check-circle.png" alt="circle">
+                                <p>Comfortable Rides</p>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/uil-check-circle.png" alt="circle">
+                                <p>Top of the line Cars</p>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/uil-check-circle.png" alt="circle">
+                                <p>Secure Payment Options</p>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/uil-check-circle.png" alt="circle">
+                                <p>Variety of options to choose from</p>
+                            </li>
+                            <li>
+                                <img src="assets/media/icons/uil-check-circle.png" alt="circle">
+                                <p>Variety of options to choose from</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- title end -->
+
+    <!-- vichles-section -->
+    <section class="vehicles-2 py-80">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <img src="assets/media/blogs/car.png" alt="car">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="txt">
+                        <h2 class="mb-24">Our Journey So Far</h2>
+                        <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus fermentum
+                            sollicitudin
+                            nascetur ipsum commodo. Sed in ultricies placerat sed commodo ut rhoncus ac. Vel ut
+                            neque
+                            amet tellus tristique sit. Condimentum at diam pulvinar praesent est amet egestas morbi.
+                            Vivamus ut commodo venenatis hac porttitor sed risus a. Faucibus risus blandit convallis
+                            risus sit fermentum quisque. Aliquam quis ut sagittis nullam eget diam.<br><br>
+                            Massa urna quis aliquet vel condimentum. Adipiscing adipiscing volutpat sem non.
+                            Tincidunt
+                            enim vitae consectetur neque amet.</p>
+                    </div>
+                    <a href="rental.html" class="cus-btn">
+                        <span class="btn-text">
+                            View Our Cars
+                        </span>
+                        <span>
+                            View Our Cars
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- vicheles-end -->
+
+    <!-- catagory -->
+    <section class="catagory py-80">
+        <div class="container-fluid">
+            <div class="row row-gap-3">
+                <div class="col-lg-4 col-md-4">
+                    <div class="block">
+                        <img src="assets/media/user/uil-book-open.png" alt="book">
+                        <h5>Mission</h5>
+                    </div>
+                    <div class="txt">
+                        <p>Lorem ipsum dolor sit amet consectetur.<br>
+                            Ac nisl lacus fermentum sollicitudin nascetur ipsum commodo. Sed in ultricies placerat sed
+                            commodo ut rhoncus ac.<br><br>
+                            Condimentum at diam pulvinar praesent est amet egestas morbi. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="block">
+                        <img src="assets/media/user/uil-eye.png" alt="eye">
+                        <h5>Vision</h5>
+                    </div>
+                    <div class="txt">
+                        <p>Lorem ipsum dolor sit amet consectetur.<br>
+                            Ac nisl lacus fermentum sollicitudin nascetur ipsum commodo. Sed in ultricies placerat sed
+                            commodo ut rhoncus ac.<br><br>
+                            Condimentum at diam pulvinar praesent est amet egestas morbi. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="block">
+                        <img src="assets/media/user/uil-heart.png" alt="heart">
+                        <h5>Value</h5>
+                    </div>
+                    <div class="txt">
+                        <p>Lorem ipsum dolor sit amet consectetur.<br>
+                            Ac nisl lacus fermentum sollicitudin nascetur ipsum commodo. Sed in ultricies placerat sed
+                            commodo ut rhoncus ac.<br><br>
+                            Condimentum at diam pulvinar praesent est amet egestas morbi. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- catagory end -->
+
+    <!-- brands-start -->
+    <div class="brand-section my-40 py-48">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="brand-slider">
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-1.png" alt="brand-1">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-2.png" alt="brand-2">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-3.png" alt="brand-3">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-4.png" alt="brand-4">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-5.png" alt="brand-4">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-6.png" alt="brand-5">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-1.png" alt="brand-1">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-2.png" alt="brand-2">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-3.png" alt="brand-3">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-4.png" alt="brand-4">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-5.png" alt="brand-5">
+                        </div>
+                        <div class="brand-block">
+                            <img src="assets/media/brands/brand-6.png" alt="brand-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- brands-end -->
+
+    <!-- choose us -->
+    <section class="choose my-80">
+        <div class="container-fluid">
+            <div class="heading">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <h2 class="text-center black-2 mb-12">Why You Should <span>Choose Us?</span></h2>
+                        <p class="text-center mb-48">Massa urna quis aliquet vel condimentum. Adipiscing adipiscing
+                            volutpat sem non.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex row-gap-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="d-flex gap-8">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M15.22 8.79L10.93 13.09L9.28 11.44C9.19036 11.3353 9.08004 11.2503 8.95597 11.1903C8.83191 11.1303 8.69678 11.0965 8.55906 11.0912C8.42134 11.0859 8.28401 11.1091 8.15568 11.1594C8.02736 11.2096 7.91081 11.2859 7.81335 11.3833C7.7159 11.4808 7.63964 11.5974 7.58937 11.7257C7.53909 11.854 7.51589 11.9913 7.52121 12.1291C7.52653 12.2668 7.56026 12.4019 7.62028 12.526C7.6803 12.65 7.76532 12.7604 7.87 12.85L10.22 15.21C10.3134 15.3027 10.4243 15.376 10.5461 15.4258C10.6679 15.4755 10.7984 15.5008 10.93 15.5C11.1923 15.4989 11.4437 15.3947 11.63 15.21L16.63 10.21C16.7237 10.117 16.7981 10.0064 16.8489 9.88458C16.8997 9.76272 16.9258 9.63201 16.9258 9.5C16.9258 9.36799 16.8997 9.23728 16.8489 9.11542C16.7981 8.99356 16.7237 8.88296 16.63 8.79C16.4426 8.60375 16.1892 8.49921 15.925 8.49921C15.6608 8.49921 15.4074 8.60375 15.22 8.79ZM12.5 2C10.5222 2 8.58879 2.58649 6.9443 3.6853C5.29981 4.78412 4.01809 6.3459 3.26121 8.17317C2.50433 10.0004 2.3063 12.0111 2.69215 13.9509C3.078 15.8907 4.03041 17.6725 5.42894 19.0711C6.82746 20.4696 8.60929 21.422 10.5491 21.8079C12.4889 22.1937 14.4996 21.9957 16.3268 21.2388C18.1541 20.4819 19.7159 19.2002 20.8147 17.5557C21.9135 15.9112 22.5 13.9778 22.5 12C22.5 10.6868 22.2413 9.38642 21.7388 8.17317C21.2363 6.95991 20.4997 5.85752 19.5711 4.92893C18.6425 4.00035 17.5401 3.26375 16.3268 2.7612C15.1136 2.25866 13.8132 2 12.5 2ZM12.5 20C10.9178 20 9.37104 19.5308 8.05544 18.6518C6.73985 17.7727 5.71447 16.5233 5.10897 15.0615C4.50347 13.5997 4.34504 11.9911 4.65372 10.4393C4.9624 8.88743 5.72433 7.46197 6.84315 6.34315C7.96197 5.22433 9.38743 4.4624 10.9393 4.15372C12.4911 3.84504 14.0997 4.00346 15.5615 4.60896C17.0233 5.21447 18.2727 6.23984 19.1518 7.55544C20.0308 8.87103 20.5 10.4177 20.5 12C20.5 14.1217 19.6572 16.1566 18.1569 17.6569C16.6566 19.1571 14.6217 20 12.5 20Z" fill="#2D74BA"/>
+                              </svg>
+                        </div>
+                        <div class="block">
+                            <h5 class="mb-8">Safety</h5>
+                            <p>Drive with confidence in our meticulously<br> maintained vehicles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="d-flex gap-8">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M15.22 8.79L10.93 13.09L9.28 11.44C9.19036 11.3353 9.08004 11.2503 8.95597 11.1903C8.83191 11.1303 8.69678 11.0965 8.55906 11.0912C8.42134 11.0859 8.28401 11.1091 8.15568 11.1594C8.02736 11.2096 7.91081 11.2859 7.81335 11.3833C7.7159 11.4808 7.63964 11.5974 7.58937 11.7257C7.53909 11.854 7.51589 11.9913 7.52121 12.1291C7.52653 12.2668 7.56026 12.4019 7.62028 12.526C7.6803 12.65 7.76532 12.7604 7.87 12.85L10.22 15.21C10.3134 15.3027 10.4243 15.376 10.5461 15.4258C10.6679 15.4755 10.7984 15.5008 10.93 15.5C11.1923 15.4989 11.4437 15.3947 11.63 15.21L16.63 10.21C16.7237 10.117 16.7981 10.0064 16.8489 9.88458C16.8997 9.76272 16.9258 9.63201 16.9258 9.5C16.9258 9.36799 16.8997 9.23728 16.8489 9.11542C16.7981 8.99356 16.7237 8.88296 16.63 8.79C16.4426 8.60375 16.1892 8.49921 15.925 8.49921C15.6608 8.49921 15.4074 8.60375 15.22 8.79ZM12.5 2C10.5222 2 8.58879 2.58649 6.9443 3.6853C5.29981 4.78412 4.01809 6.3459 3.26121 8.17317C2.50433 10.0004 2.3063 12.0111 2.69215 13.9509C3.078 15.8907 4.03041 17.6725 5.42894 19.0711C6.82746 20.4696 8.60929 21.422 10.5491 21.8079C12.4889 22.1937 14.4996 21.9957 16.3268 21.2388C18.1541 20.4819 19.7159 19.2002 20.8147 17.5557C21.9135 15.9112 22.5 13.9778 22.5 12C22.5 10.6868 22.2413 9.38642 21.7388 8.17317C21.2363 6.95991 20.4997 5.85752 19.5711 4.92893C18.6425 4.00035 17.5401 3.26375 16.3268 2.7612C15.1136 2.25866 13.8132 2 12.5 2ZM12.5 20C10.9178 20 9.37104 19.5308 8.05544 18.6518C6.73985 17.7727 5.71447 16.5233 5.10897 15.0615C4.50347 13.5997 4.34504 11.9911 4.65372 10.4393C4.9624 8.88743 5.72433 7.46197 6.84315 6.34315C7.96197 5.22433 9.38743 4.4624 10.9393 4.15372C12.4911 3.84504 14.0997 4.00346 15.5615 4.60896C17.0233 5.21447 18.2727 6.23984 19.1518 7.55544C20.0308 8.87103 20.5 10.4177 20.5 12C20.5 14.1217 19.6572 16.1566 18.1569 17.6569C16.6566 19.1571 14.6217 20 12.5 20Z" fill="#2D74BA"/>
+                              </svg>
+                        </div>
+                        <div class="block">
+                            <h5 class="mb-8">Reliabilty</h5>
+                            <p>Count on us for a seamless rental<br>experience every time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6">
+                    <div class="d-flex gap-8">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M15.22 8.79L10.93 13.09L9.28 11.44C9.19036 11.3353 9.08004 11.2503 8.95597 11.1903C8.83191 11.1303 8.69678 11.0965 8.55906 11.0912C8.42134 11.0859 8.28401 11.1091 8.15568 11.1594C8.02736 11.2096 7.91081 11.2859 7.81335 11.3833C7.7159 11.4808 7.63964 11.5974 7.58937 11.7257C7.53909 11.854 7.51589 11.9913 7.52121 12.1291C7.52653 12.2668 7.56026 12.4019 7.62028 12.526C7.6803 12.65 7.76532 12.7604 7.87 12.85L10.22 15.21C10.3134 15.3027 10.4243 15.376 10.5461 15.4258C10.6679 15.4755 10.7984 15.5008 10.93 15.5C11.1923 15.4989 11.4437 15.3947 11.63 15.21L16.63 10.21C16.7237 10.117 16.7981 10.0064 16.8489 9.88458C16.8997 9.76272 16.9258 9.63201 16.9258 9.5C16.9258 9.36799 16.8997 9.23728 16.8489 9.11542C16.7981 8.99356 16.7237 8.88296 16.63 8.79C16.4426 8.60375 16.1892 8.49921 15.925 8.49921C15.6608 8.49921 15.4074 8.60375 15.22 8.79ZM12.5 2C10.5222 2 8.58879 2.58649 6.9443 3.6853C5.29981 4.78412 4.01809 6.3459 3.26121 8.17317C2.50433 10.0004 2.3063 12.0111 2.69215 13.9509C3.078 15.8907 4.03041 17.6725 5.42894 19.0711C6.82746 20.4696 8.60929 21.422 10.5491 21.8079C12.4889 22.1937 14.4996 21.9957 16.3268 21.2388C18.1541 20.4819 19.7159 19.2002 20.8147 17.5557C21.9135 15.9112 22.5 13.9778 22.5 12C22.5 10.6868 22.2413 9.38642 21.7388 8.17317C21.2363 6.95991 20.4997 5.85752 19.5711 4.92893C18.6425 4.00035 17.5401 3.26375 16.3268 2.7612C15.1136 2.25866 13.8132 2 12.5 2ZM12.5 20C10.9178 20 9.37104 19.5308 8.05544 18.6518C6.73985 17.7727 5.71447 16.5233 5.10897 15.0615C4.50347 13.5997 4.34504 11.9911 4.65372 10.4393C4.9624 8.88743 5.72433 7.46197 6.84315 6.34315C7.96197 5.22433 9.38743 4.4624 10.9393 4.15372C12.4911 3.84504 14.0997 4.00346 15.5615 4.60896C17.0233 5.21447 18.2727 6.23984 19.1518 7.55544C20.0308 8.87103 20.5 10.4177 20.5 12C20.5 14.1217 19.6572 16.1566 18.1569 17.6569C16.6566 19.1571 14.6217 20 12.5 20Z" fill="#2D74BA"/>
+                              </svg>
+                        </div>
+                        <div class="block">
+                            <h5 class="mb-8"> More Options</h5>
+                            <p>With our vast fleet of cars you will get<br> what you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="d-flex gap-8">
+                        <div class="align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M15.22 8.79L10.93 13.09L9.28 11.44C9.19036 11.3353 9.08004 11.2503 8.95597 11.1903C8.83191 11.1303 8.69678 11.0965 8.55906 11.0912C8.42134 11.0859 8.28401 11.1091 8.15568 11.1594C8.02736 11.2096 7.91081 11.2859 7.81335 11.3833C7.7159 11.4808 7.63964 11.5974 7.58937 11.7257C7.53909 11.854 7.51589 11.9913 7.52121 12.1291C7.52653 12.2668 7.56026 12.4019 7.62028 12.526C7.6803 12.65 7.76532 12.7604 7.87 12.85L10.22 15.21C10.3134 15.3027 10.4243 15.376 10.5461 15.4258C10.6679 15.4755 10.7984 15.5008 10.93 15.5C11.1923 15.4989 11.4437 15.3947 11.63 15.21L16.63 10.21C16.7237 10.117 16.7981 10.0064 16.8489 9.88458C16.8997 9.76272 16.9258 9.63201 16.9258 9.5C16.9258 9.36799 16.8997 9.23728 16.8489 9.11542C16.7981 8.99356 16.7237 8.88296 16.63 8.79C16.4426 8.60375 16.1892 8.49921 15.925 8.49921C15.6608 8.49921 15.4074 8.60375 15.22 8.79ZM12.5 2C10.5222 2 8.58879 2.58649 6.9443 3.6853C5.29981 4.78412 4.01809 6.3459 3.26121 8.17317C2.50433 10.0004 2.3063 12.0111 2.69215 13.9509C3.078 15.8907 4.03041 17.6725 5.42894 19.0711C6.82746 20.4696 8.60929 21.422 10.5491 21.8079C12.4889 22.1937 14.4996 21.9957 16.3268 21.2388C18.1541 20.4819 19.7159 19.2002 20.8147 17.5557C21.9135 15.9112 22.5 13.9778 22.5 12C22.5 10.6868 22.2413 9.38642 21.7388 8.17317C21.2363 6.95991 20.4997 5.85752 19.5711 4.92893C18.6425 4.00035 17.5401 3.26375 16.3268 2.7612C15.1136 2.25866 13.8132 2 12.5 2ZM12.5 20C10.9178 20 9.37104 19.5308 8.05544 18.6518C6.73985 17.7727 5.71447 16.5233 5.10897 15.0615C4.50347 13.5997 4.34504 11.9911 4.65372 10.4393C4.9624 8.88743 5.72433 7.46197 6.84315 6.34315C7.96197 5.22433 9.38743 4.4624 10.9393 4.15372C12.4911 3.84504 14.0997 4.00346 15.5615 4.60896C17.0233 5.21447 18.2727 6.23984 19.1518 7.55544C20.0308 8.87103 20.5 10.4177 20.5 12C20.5 14.1217 19.6572 16.1566 18.1569 17.6569C16.6566 19.1571 14.6217 20 12.5 20Z" fill="#2D74BA"/>
+                              </svg>
+                        </div>
+                        <div class="block">
+                            <h5 class="mb-8">Insurance</h5>
+                            <p>Protecting you on the road, ensuring peace of mind throughout your journey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-start -->
+    <footer class="pt-40">
+        <div class="container-fluid">
+            <div class="row mb-16 row-gap-4">
+                <div class="col-lg-3">
+                    <div class="txt-block">
+                        <a href="index.html">
+                            <img src="assets/media/footer/logo.png" alt="logo">
+                            <img src="assets/media/footer/Frame-173.png" alt="Frame">
+                        </a>
+                    </div>
+                    <p class="mb-32">Lorem ipsum dolor sit amet consectetur. Tellus varius senectus quis tellus ipsum
+                        nunc
+                        dictum sed. Nunc nam neque aliquam quis purus.</p>
+                    <h6 class="white mb-16">Subscribe To Our Newsletter</h6>
+                    <form action="index.html" class="newsletter-form">
+                        <input type="email" name="email" id="eMail" class="form-input"
+                            placeholder=" Your email address">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_383_5670)">
+                                    <path
+                                        d="M19.8284 0.171647C19.6626 0.00586635 19.414 -0.0451101 19.1965 0.041921L0.36834 7.57308C0.152911 7.65925 0.00865304 7.86441 0.00037181 8.09632C-0.00787036 8.32819 0.121504 8.54308 0.330254 8.64433L7.75477 12.2451L11.3556 19.6697C11.4538 19.8722 11.6589 19.9999 11.8827 19.9999C11.8896 19.9999 11.8966 19.9998 11.9036 19.9995C12.1355 19.9913 12.3407 19.847 12.4268 19.6316L19.9581 0.803599C20.0451 0.585943 19.9941 0.337389 19.8284 0.171647ZM2.0349 8.16862L16.9812 2.19016L8.07383 11.0974L2.0349 8.16862ZM11.8313 17.9651L8.90246 11.926L17.8099 3.01875L11.8313 17.9651Z"
+                                        fill="#2D74BA" />
+                                </g>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-5 col-md-8 offset-lg-1">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="links-block">
+                                <h6 class="mb-32">Quick Links</h6>
+                                <ul class="unstyled">
+                                    <li class="mb-12">
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="links-block">
+                                <h6 class="mb-32">Information</h6>
+                                <ul class="unstyled">
+                                    <li class="mb-12">
+                                        <a href="rental.html">Rentals</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="book-now.html">Booking Form</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="booking.html">Booking Details</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="index.html">Brands</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="links-block">
+                        <div class="mb-24">
+                            <h6 class="mb-32">Contact info</h6>
+                        </div>
+                        <ul class="unstyled">
+                            <li class="mb-16">
+                                <div class="contact">
+                                    <img src="assets/media/footer/uil-outgoing-call.png" alt="call-logo">
+                                    <a href="tel:+12345678">+123 (4567) -890</a>
+                                </div>
+                            </li>
+                            <li class="mb-16">
+                                <div class="contact">
+                                    <img src="assets/media/footer/uil-map-marker.png" alt="logo">
+                                    <p>Main Street, New Jersey</p>
+                                </div>
+                            </li>
+                            <li class="mb-24">
+                                <div class="contact">
+                                    <img src="assets/media/footer/uil-envelope.png" alt="logo">
+                                    <a href="mailto:example@company.com">example@company.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5>Follow us!</h5>
+                        <div class="social-icons mb-12">
+                            <ul class="d-flex unstyled gap-12">
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Instagram.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Twitter.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Dribbble.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Linkedin.png " alt="logo">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line  bg-light-gray"></div>
+            <p class="mt-32 pb-32 text-center">@2025 All Rights Copyright <span class="fw-700 color-sec">RapidRide.</span>
+                Design & Developed By UIPARADOX</p>
+        </div>
+    </footer> 
+    <!--Footer-end -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- Mobile Menu Start -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/media/user/logo.png" alt=""></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:example@company.com">example@company.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+12345678">+123 (4567) -890</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__social">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/smooth-scrollbar.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

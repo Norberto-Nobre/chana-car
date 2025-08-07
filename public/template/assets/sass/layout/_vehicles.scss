@@ -1,0 +1,410 @@
+.vehicles {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    img {
+        @include media-query(576px) {
+            margin-bottom: 24px;
+        }
+    }
+    .txt {
+        h2 {
+            color: $black-2;
+            @include media-query(768px) {
+                font-size: 37px;
+            }
+        }
+    }
+    .heading {
+        gap: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .description {
+        margin-top: 22px;
+        h2 {
+            margin-bottom: 9px;
+            color: $black-2;
+        }
+        p {
+            color: $light-gray;
+        }
+    }
+    // .vehicle-card-1 {
+    //     padding: 19px;
+    //     width: 100%;
+    //     border-radius: 16px;
+    //     background: $accent-4;
+    //     transition: $transition;
+    //     .title {
+    //         font-size: 28px;
+    //         transition: $transition;
+    //         color: $black-2;
+    //         margin-bottom: 4px;
+    //         @include media-query(576px) {
+    //             font-size: 20px;
+    //         }
+    //     }
+    //     .icons {
+    //         transition: $transition;
+    //         gap: 7px;
+    //         display: flex;
+    //         margin-bottom: 12px;
+    //     }
+    //     p {
+    //         transition: $transition;
+    //         color: $light-gray;
+    //     }
+    //     h5 {
+    //         transition: $transition;
+    //         color: $black-2;
+    //         display: flex;
+    //     }
+    //     .bottom-row {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: space-between;
+    //         h6 {
+    //             color: $black-2;
+    //         }
+    //         p {
+    //             margin-bottom: 4px;
+    //         }
+    //     }
+    //     &:hover {
+    //         transition: $transition;
+    //         background: $accent-1;
+    //         .cus-btn {
+    //             color: $accent-1;
+    //             background: $accent-3;
+    //             span {
+    //                 color: $accent-1;
+    //                 svg {
+    //                     path {
+    //                         fill: $accent-1;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         .title {
+    //             transition: $transition;
+    //             color: $accent-3;
+    //         }
+    //         p {
+    //             transition: $transition;
+    //             color: $accent-3;
+    //         }
+    //         .icons {
+    //             transition: $transition;
+    //             color: $accent-3;
+    //             svg {
+    //                 path {
+    //                     fill: $accent-3;
+    //                 }
+    //             }
+    //         }
+    //         h5 {
+    //             transition: $transition;
+    //             color: $accent-3;
+    //         }
+    //         .bottom-row {
+    //             h6 {
+    //                 transition: $transition;
+    //                 color: $accent-3;
+    //             }
+    //         }
+    //     }
+    //     p {
+    //         transition: $transition;
+    //         color: $black-2;
+    //     }
+    // }
+    .txts {
+        gap: 16px;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .search-bar {
+        color: $accent-1;
+        border: none;
+        display: flex;
+        padding: clamp(14px,0.833vw,28px);
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #ecf3f9;
+        &:focus {
+            border: none;
+        }
+        &:focus-visible {
+            border: none;
+            outline: none;
+        }
+    }
+}
+// .vehicle-card {
+//     padding: 19px;
+//     width: 100%;
+//     border-radius: 16px;
+//     background: $accent-4;
+//     transition: $transition;
+//     .title {
+//         font-size: 28px;
+//         transition: $transition;
+//         color: $black-2;
+//         margin-bottom: 4px;
+//         @include media-query(576px) {
+//             font-size: 20px;
+//         }
+//     }
+//     .icons {
+//         transition: $transition;
+//         gap: 7px;
+//         display: flex;
+//         margin-bottom: 12px;
+//     }
+//     p {
+//         transition: $transition;
+//         color: $black-2;
+//     }
+//     h5 {
+//         transition: $transition;
+//         color: $black-2;
+//         display: flex;
+//     }
+//     .bottom-row {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         h6 {
+//             color: $black-2;
+//             transition: $transition;
+//         }
+//         p {
+//             margin-bottom: 4px;
+//         }
+//     }
+//     &:hover {
+//         transition: $transition;
+//         background: $accent-1;
+//         .cus-btn {
+//             color: $accent-1;
+//             background: $accent-3;
+//             span {
+//                 color: $accent-1;
+//             }
+//         }
+//         .title {
+//             transition: $transition;
+//             color: $accent-3;
+//         }
+//         p {
+//             transition: $transition;
+//             color: $accent-3;
+//         }
+//         .icons {
+//             transition: $transition;
+//             color: $accent-3;
+//             svg {
+//                 path {
+//                     fill: $accent-3;
+//                 }
+//             }
+//         }
+//         h5 {
+//             transition: $transition;
+//             color: $accent-3;
+//         }
+//         .bottom-row {
+//             h6 {
+//                 transition: $transition;
+//                 color: $accent-3;
+//             }
+//         }
+//     }
+//     p {
+//         transition: $transition;
+//         color: $black-2;
+//     }
+// }
+.vehicle-card {
+   padding: clamp(11px,0.833vw,29px);
+    width: 100%;
+    border-radius: 16px;
+    background: $accent-4;
+    transition: $transition;
+    .title {
+        font-size: 28px;
+        color: $black-2;
+        margin-bottom: 4px;
+        @include media-query(576px) {
+            font-size: 20px;
+        }
+    }
+    .icons {
+        gap: 7px;
+        display: flex;
+        margin-bottom: 12px;
+    }
+    p {
+        color: $light-gray;
+    }
+    h5 {
+        font-family: $font-sec;
+        font-size: clamp(16px,1.198vw,25px);
+        font-size: clamp;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; 
+        color: $black-2;
+        display: flex;
+    }
+    .bottom-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h6 {
+            color: $black-2;
+        }
+        p {
+            margin-bottom: 4px;
+        }
+    }
+    &:hover {
+        background: $accent-1;
+        .cus-btn {
+            color: $accent-1;
+            background: $accent-3;
+            span {
+                color: $accent-1;
+                svg {
+                    path {
+                        fill: $accent-1;
+                    }
+                }
+            }
+        }
+        .title {
+            color: $accent-3;
+        }
+        p {
+            color: $accent-3;
+        }
+        .icons {
+            color: $accent-3;
+            svg {
+                path {
+                    fill: $accent-3;
+                }
+            }
+        }
+        h5 {
+            color: $accent-3;
+        }
+        .bottom-row {
+            h6 {
+                color: $accent-3;
+            }
+        }
+    }
+    p {
+        color: $black-2;
+    }
+}
+
+.details {
+    background: $accent-3;
+    .slider-arrows {
+        justify-content: space-between;
+        position: relative;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .sides-bar {
+        padding: clamp(8px,1.667vw,40px);
+        border-radius: 16px;
+        background: $accent-4;
+        h5 {
+            color: $black-2;
+        }
+    }
+}
+.side-bar-2 {
+    padding:  clamp(14px,1.667vw,40px);
+    border-radius: 16px;
+    background: $accent-4;
+    .form{
+        h5 {
+            color: $black-2;
+        }
+        input {
+            border: none;
+            padding: 16px;
+            width: 100%;
+            border-radius: 8px;
+            background: $accent-3;
+            &:focus {
+            }
+            &:focus-visible {
+                outline: none;
+            }
+        }
+        .cus-btn {
+            width: 100%;
+        }
+    }
+}
+
+.as-nav-slider {
+    margin: 0 -12px;
+    .slick-current {
+        border: 1px solid $accent-1;
+    }
+    .img-box {
+        margin: 0 12px;
+    }
+}
+.services {
+    background: $accent-4;
+    .banner {
+        padding: clamp(20px,1.667vw,40px);
+        border-radius: 16px;
+        background: $accent-3;
+        h6 {
+            color: $black-2;
+        }
+        p {
+            color: $black-2;
+        }
+    }
+    .banner-2 {
+        padding: clamp(20px,1.667vw,40px);
+        border-radius: 16px;
+        background: $accent-3;
+        h6 {
+            color: $black-2;
+        }
+    }
+}
+.banner-3 {
+    padding: clamp(20px,1.667vw,40px);
+    border-radius: 16px;
+    background: $accent-3;
+    h6 {
+        color: $black-2;
+    }
+}
+.sid-bar {
+    padding: clamp(21px,1.667vw,40px);
+    border-radius: 16px;
+    background: $accent-3;
+    h6 {
+        color: $black-2;
+    }
+}
+

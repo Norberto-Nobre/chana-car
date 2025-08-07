@@ -1,0 +1,31 @@
+.hero-banner {
+    position: relative;
+  h1 {
+    padding: clamp(16px,1.146vw,28px);
+    text-align: center;
+    color: $black-2;
+
+    br{
+      @include media-query(390px){
+        display: none;
+      }
+    }
+  }
+  span {
+    color: $accent-1;
+  }
+  .btn-block {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  .map-image {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+  }
+}

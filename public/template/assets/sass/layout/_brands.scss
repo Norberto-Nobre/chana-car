@@ -1,0 +1,21 @@
+
+.brand-section{
+    background:  $accent-4;
+    .brand-slider{
+        margin: 0 -48px;
+        @include media-query(1024px){
+            margin: 0;
+        }
+    }
+    .brand-block{
+        display: flex;
+        justify-content: center;
+        margin: 0 48px;
+        width: auto !important;
+        img{
+            @include media-query(490px){
+                object-fit: contain;
+            }
+        }
+    }
+}

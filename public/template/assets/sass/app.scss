@@ -1,0 +1,199 @@
+/*---------------------------------------------"
+// Template Name: Teach Me
+// Description:  Teach Me Html Template
+// Version: 1.0.0
+
+===============================================   
+STYLE SHEET INDEXING
+|
+|___ Fonts
+|___ Variables
+|___ Responsive
+|___ Reset Styles
+|___ Spacing
+|___ Helper Classes
+|___ Buttons
+|___ Headings
+|___ Layout Styles
+|___ END STYLE SHEET INDEXING
+
+--------------------------------------------*/
+
+/*-------------------------
+    Fonts
+-------------------------*/
+
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-Thin.otf") format("truetype");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-ExtraLight.otf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-Light.otf") format("truetype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-Regular.otf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-Medium.otf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-SemiBold.otf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-Bold.otf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-ExtraBold.otf") format("truetype");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "metropolis";
+    src: url("./fonts/metropolis/Metropolis-Black.otf") format("truetype");
+    font-weight: 900;
+}
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap");
+
+/*-------------------------
+    Variables
+-------------------------*/
+/* Fonts */
+$font-sec: "metropolis";
+$font-primary: "Khula", sans-serif;
+$font-awesome: "Font Awesome 6 Pro";
+
+/* Colors */
+$accent-1: #2d74ba;
+$accent-2: white;
+$accent-3: white;
+$accent-4:  #ecf3f9;
+$medium-black: #1e1f20;
+$black: #cecefc;
+$black-2: #040408;
+$light-black: #141516;
+$dark-gray: #45474f;
+$light-gray: #92949f;
+$lightest-gray: #eaeaec;
+$light-white: #fafafa;
+$white: #ffffff;
+/* Transitions */
+$transition: all 0.5s ease-in-out;
+
+/* Border-Radius */
+$br-4: clamp(2px, 0.208vw, 8px);
+$br-8: clamp(4px, 0.417vw, 16px);
+$br-10: clamp(5px, 0.521vw, 20px);
+$br-12: clamp(8px, 0.625vw, 24px);
+$br-14: clamp(10px, 0.729vw, 28px);
+$br-16: clamp(12px, 0.833vw, 32px);
+$br-18: clamp(14px, 0.938vw, 36px);
+$br-20: clamp(16px, 1.042vw, 40px);
+$br-24: clamp(18px, 1.25vw, 48px);
+$br-32: clamp(24px, 1.667vw, 64px);
+
+/* Gap */
+$gap-4: clamp(2px, 0.208vw, 8px);
+$gap-8: clamp(4px, 0.417vw, 16px);
+$gap-10: clamp(5px, 0.521vw, 20px);
+$gap-12: clamp(8px, 0.625vw, 24px);
+$gap-14: clamp(10px, 0.729vw, 28px);
+$gap-16: clamp(12px, 0.833vw, 32px);
+$gap-18: clamp(14px, 0.938vw, 36px) !important;
+$gap-20: clamp(16px, 1.042vw, 40px) !important;
+$gap-24: clamp(18px, 1.25vw, 48px) !important;
+$gap-32: clamp(24px, 1.667vw, 64px);
+$gap-38: clamp(28px, 1.979vw, 76px);
+$gap-48: clamp(40px, 2.5vw, 28px);
+$gap-64: clamp(48px, 3.333vw, 128px);
+
+/*-------------------------
+    Responsive Styles
+-------------------------*/
+@import "helpers/mixin";
+
+/*-------------------------
+    Reset Styles
+-------------------------*/
+@import "basic/basic";
+
+/*-------------------------
+Helpers
+-------------------------*/
+@import "helpers/classes";
+
+@import "helpers/spacing";
+
+/*-------------------------
+Elements
+-------------------------*/
+
+@import "elements/buttons";
+
+@import "elements/form";
+
+@import "elements/dropdown";
+
+@import "elements/search-popup";
+
+@import "elements/modal-box";
+
+@import "elements/video";
+
+/*-------------------------
+  layouts
+-------------------------*/
+@import "layout/header";
+
+@import "layout/hero-banner";
+
+@import "layout/blogs";
+
+@import "layout/footer";
+
+@import "layout/title-banner";
+
+@import "layout/about";
+
+@import "layout/sidebar";
+
+@import "layout/contact";
+
+@import "layout/customers";
+
+@import "layout/booking";
+
+@import "layout/features";
+
+@import "layout/vehicles";
+
+@import "layout/catagory";
+
+@import "layout/brands";
+
+@import "layout/test";
+
+@import "layout/blogs";
+
+@import "layout/footer";
+
+@import "layout/choose";
+
+@import "layout/ride";
+
+@import "layout/preloader";

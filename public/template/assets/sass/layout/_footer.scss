@@ -1,0 +1,112 @@
+footer {
+    background: $accent-1;
+    .txt-block {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        margin-bottom: 22px;
+    }
+    p {
+        color: $accent-3;
+    }
+    h3 {
+        margin-bottom: 22px;
+        color: $accent-3;
+    }
+    .newsletter-form {
+        position: relative;
+        input {
+            border: none;
+            width: 100%;
+            padding: clamp(5px,0.417vw,10px) clamp(10px,0.833vw,20px);
+            align-items: center;
+            border-radius: 8px;
+            background: $accent-3;
+            @include media-query(576px) {
+              width: 63%;
+            }
+            @include media-query(490px) {
+                width: 100%;
+              }
+            @include media-query(768px) {
+                max-width: 500px;
+            }
+            @include media-query(1400px) {
+                padding: clamp(10px,0.729vw,20px);
+            }
+            &:focus {
+                border: none;
+            }
+            &:focus-visible {
+                border: none;
+                outline: none;
+            }
+        }
+
+        button {
+            background: transparent;
+            border: 0;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 18px;
+            top: 9px;
+            @include media-query(768px) {
+                top:12px;
+            }
+            @include media-query(576px) {
+                top:12px;
+            }
+            @include media-query(490px) {
+                top:9px;
+            }
+        }
+    }
+    .links-block {
+        h6 {
+            color: $accent-3;
+        }
+        a {
+            color: $accent-3;    
+            font-family: Khula;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            &:hover{
+               background-color: $accent-1; 
+            }
+        }
+        .contact {
+            margin-bottom: 12px;
+            align-items: center;
+            gap: 4px;
+            display: flex;
+            p {
+                margin-bottom: 0px;
+            }
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        h5 {
+            margin-bottom: 22px;
+            color: $accent-3;
+        }
+        .socail-icons {
+            ul {
+                gap: 12px;
+            }
+        }
+    }
+    .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+    .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
+    .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select,
+    .input-group:not(.has-validation)
+        > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+        border-top-right-radius: 12px !important;
+        border-bottom-right-radius: 12px !important;
+    }
+
+}

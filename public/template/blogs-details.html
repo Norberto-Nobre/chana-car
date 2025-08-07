@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Teach Me || E-Learning HTML Template">
+
+    <title>Car rental</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/user/favicon.png">
+
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/ion.rangeSlider.css">
+    <link rel="stylesheet" href="assets/css/vendor/smoothScorllbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+
+<body class="x-hidden">
+
+    <!-- PRELOADER START -->
+    <div id="preloader">
+        <div class="spinner"></div>
+
+      <div id="content"></div>
+    </div>
+    <!-- PRELOADER END -->
+
+    <!-- Main Wrapper Start -->
+    <!-- HEADER MENU START -->
+    <header class="header my-40">
+        <div class="container-fluid">
+            <nav class="navigation d-flex align-items-center justify-content-between">
+                <a href="index.html" class="d-flex align-items-center">
+                    <img src="assets/media/user/logo.png" alt="/logo" class="header-logo">
+                </a>
+                <div class="menu-button-right">
+                    <div class="main-menu__nav">
+                        <ul class="main-menu__list">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);">Rental</a>
+                                <ul>
+                                    <li><a href="rental.html">Rental</a></li>
+                                    <li><a href="rental-sidebar.html">Rental sidebar</a></li>
+                                    <li><a href="vehicle-details.html">Vehicle details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);">Booking</a>
+                                <ul>
+                                    <li><a href="booking.html">Booking</a></li>
+                                    <li><a href="book-now.html">Book now</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);">Blogs</a>
+                                <ul>
+                                    <li><a href="blogs.html">Blogs</a></li>
+                                    <li><a href="blogs-details.html">Blogs details</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-menu__right">
+                    <div class="search-heart-icon d-md-flex d-none align-items-center gap-24">
+                        <a href="book-now.html" class="cus-btn">
+                            <span class="btn-text">
+                                Book now
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                </svg>
+                            </span>
+                            <span>
+                                Book now
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <a href="#" class="d-xl-none d-flex main-menu__toggler mobile-nav__toggler">
+                        <i class="fa-light fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER MENU END -->
+
+    <!-- About-area start -->
+    <section class="blog-detail-banner">
+        <img src="assets/media/hero/about-4.png" alt="hero-banner">
+        <div class="detail">
+            <h2>Rental Renovation: Smart Upgrades That Add Value</h2>
+            <div class="txts">
+                <img src="assets/media/hero/Ellipse-6.png" alt="logo">
+                <p>By: Kylie Jenner</p>
+                <img src="assets/media/hero/uil-calendar-alt.png" alt="logo">
+                <p>November 21, 2024</p>
+            </div>
+        </div>
+    </section>
+    <!-- About-area start  end -->
+    <section class="blog-detail-banner-2 py-40">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-lg-8">
+                    <p class="mt-48 mb-24">Lorem ipsum dolor sit amet consectetur. Aliquam in orci habitasse facilisi. Ac sit tincidunt
+                        tempor adipiscing. Rhoncus consectetur in id vulputate. Ut ut neque habitant massa. Ornare
+                        nibh gravida mi duis mauris mi consectetur. Diam a odio habitasse maecenas facilisis. Id
+                        turpis massa elementum ut magna dis sed diam. Habitasse augue mi sit curabitur amet.
+                        Lobortis tincidunt auctor nisi ultrices aliquam commodo nullam. Eu ornare eu et arcu platea.
+                        Eu sit egestas amet a amet. Velit scelerisque quis interdum pharetra nec egestas ut. Odio
+                        dui bibendum libero euismod leo et<br><br>
+                        Congue facilisi diam commodo sollicitudin in fusce curabitur proin. Nisl lobortis quis
+                        habitant in nec et. Tristique id consectetur risus non integer eget dignissim ultrices.
+                        Aenean sed neque purus imperdiet sit mauris. Vitae aliquam hendrerit elit platea ultrices.
+                        Tristique viverra arcu lobortis odio. Turpis pellentesque ipsum egestas mauris integer
+                        imperdiet viverra sit nulla. Placerat magna adipiscing morbi enim facilisi facilisi eget.
+                        Amet donec in magna quam netus volutpat pellentesque morbi ipsum. Pellentesque suspendisse
+                        vel facilisi metus tempor sed accumsan proin. Purus massa dictum pellentesque amet enim.
+                        Viverra senectus viverra volutpat eros praesent enim. Convallis ac elementum etiam elit
+                        placerat mauris aliquam. Volutpat condimentum diam sit viverra id adipiscing blandit magna.
+                    </p>
+                    <div class="row mb-24">
+                        <div class="col-6">
+                            <img src="assets/media/hero/pic.png" alt="logo">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/media/hero/2.png" alt="logo">
+                        </div>
+                    </div>
+                    <p class="mb-24">Congue facilisi diam commodo sollicitudin in fusce curabitur proin. Nisl lobortis
+                        quis habitant in nec et. Tristique id consectetur risus non integer eget dignissim ultrices.
+                        Aenean sed neque purus imperdiet sit mauris. Vitae aliquam hendrerit elit platea ultrices.
+                        Tristique viverra arcu lobortis odio. Turpis pellentesque ipsum egestas mauris integer imperdiet
+                        viverra sit nulla. Placerat magna adipiscing morbi enim facilisi facilisi eget. Amet donec in
+                        magna quam netus volutpat pellentesque morbi ipsum.</p>
+                    <div class="file mb-24">
+                        <img src="assets/media/icons/quotes.png" alt="logo" class="mb-24">
+                        <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Amet in donec non elit ipsum est
+                            ultrices dolor adipiscing. Risus posuere justo placerat placerat. Quis quis quis pulvinar
+                            enim. Bibendum rutrum odio cras arcu. Mi egestas nunc dignissim bibendum pretium. Nulla elit
+                            sem magna ornare hendrerit luctus.</p>
+                        <p class="mt-24">Lewis John</p>
+                    </div>
+                    <p class="mb-24">Congue facilisi diam commodo sollicitudin in fusce curabitur proin. Nisl lobortis
+                        quis habitant in nec et. Tristique id consectetur risus non integer eget dignissim ultrices.
+                        Aenean sed neque purus imperdiet sit mauris. Vitae aliquam hendrerit elit platea ultrices.
+                        Tristique viverra arcu lobortis odio. Turpis pellentesque ipsum egestas mauris integer imperdiet
+                        viverra sit nulla. Placerat magna adipiscing morbi enim facilisi facilisi eget. Amet donec in
+                        magna quam netus volutpat pellentesque morbi ipsum. Pellentesque suspendisse vel facilisi metus
+                        tempor sed accumsan proin. Purus massa dictum pellentesque amet enim. Viverra senectus viverra
+                        volutpat eros praesent enim. Convallis ac elementum etiam elit placerat mauris aliquam. Volutpat
+                        condimentum diam sit viverra id adipiscing blandit magna.
+                    </p>
+                    <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Eget quam egestas non at turpis. Non vitae
+                        consequat laoreet sed magna. Lorem tincidunt tellus egestas dignissim elementum hac diam. Amet
+                        quis varius volutpat nibh sollicitudin luctus et tellus id. Ut varius sed nunc arcu aliquam
+                        nisi.
+                        Eros gravida amet diam dictumst turpis odio. Dui vivamus sem eget nunc risus. Dolor mi phasellus
+                        vestibulum velit lorem consectetur hendrerit sapien rhoncus. Pulvinar pharetra ante sagittis
+                        accumsan aliquet magna arcu duis. Vitae metus enim porta faucibus neque suspendisse facilisis.
+                        Vel sagittis feugiat et fusce urna integer dui. Phasellus suspendisse porta lacus neque tellus.
+                        Aliquet feugiat laoreet laoreet odio. Aliquam vulputate a faucibus nullam quis mauris et. Nec
+                        tellus ultricies quam rhoncus egestas pharetra vel nec.
+                        Massa amet risus egestas odio nulla. Tellus pellentesque ut enim amet donec facilisis vel amet
+                        maecenas. Molestie eget vitae faucibus blandit.</p>
+                    <div class="form">
+                        <h6>Leave a Reply</h6>
+                        <hr class="mt-24 mb-24">
+                        <div class="row d-flex">
+                            <div class="col-6">
+                                <p class="mb-8">Your Name *</p>
+                                <input class="text" placeholder="">
+                            </div>
+                            <div class="col-6">
+                                <p class="mb-8">Email Address</p>
+                                <input class="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-12">
+                                <p class="mt-24 mb-8">Comments</p>
+                                <textarea name="Message" id="Message" rows="5" placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <a href="blogs-details.html" class="cus-btn">
+                                <span class="btn-text">
+                                    Submit Review
+                                </span>
+                                <span>
+                                    Submit Review
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sides-bar mt-24">
+                        <h5 class="mb-12">See Also</h5>
+                        <div class="pic mb-24">
+                            <a href="blogs-details.html">
+                                <img src="assets/media/blogs/cars.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="text-block">
+                            <p class="mb-12 ">April 7, 2024</p>
+                            <a href="blogs.html" class="title">Eco-Friendly Rentals: Sustainability Solutions for Property
+                                Owners...</a>
+                            <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus fermentum sollicitudin
+                                nascetur
+                                ipsum .</p>
+                            <a href="blogs.html" class="cus-btn-2">
+                                <span class="btn-text">
+                                    See Details
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M17.9199 6.62C17.8185 6.37565 17.6243 6.18147 17.3799 6.08C17.2597 6.02876 17.1306 6.00158 16.9999 6H6.99994C6.73472 6 6.48037 6.10536 6.29283 6.29289C6.1053 6.48043 5.99994 6.73478 5.99994 7C5.99994 7.26522 6.1053 7.51957 6.29283 7.70711C6.48037 7.89464 6.73472 8 6.99994 8H14.5899L6.28994 16.29C6.19621 16.383 6.12182 16.4936 6.07105 16.6154C6.02028 16.7373 5.99414 16.868 5.99414 17C5.99414 17.132 6.02028 17.2627 6.07105 17.3846C6.12182 17.5064 6.19621 17.617 6.28994 17.71C6.3829 17.8037 6.4935 17.8781 6.61536 17.9289C6.73722 17.9797 6.86793 18.0058 6.99994 18.0058C7.13195 18.0058 7.26266 17.9797 7.38452 17.9289C7.50638 17.8781 7.61698 17.8037 7.70994 17.71L15.9999 9.41V17C15.9999 17.2652 16.1053 17.5196 16.2928 17.7071C16.4804 17.8946 16.7347 18 16.9999 18C17.2652 18 17.5195 17.8946 17.707 17.7071C17.8946 17.5196 17.9999 17.2652 17.9999 17V7C17.9984 6.86932 17.9712 6.74022 17.9199 6.62Z"
+                                            fill="#2D74BA" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    See Details
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="pic mb-24 mt-48">
+                            <a href="blogs-details.html">
+                                <img src="assets/media/blogs/cars.png" alt="car">
+                            </a>
+                        </div>
+                        <div class="text-block">
+                            <p class="mb-12">April 7, 2024</p>
+                            <a href="blogs.html" class="title">Eco-Friendly Rentals: Sustainability Solutions for Property
+                                Owners...</a>
+                            <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus fermentum sollicitudin
+                                nascetur
+                                ipsum .</p>
+                            <a href="blogs.html" class="cus-btn-2">
+                                <span class="btn-text">
+                                    See Details
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M17.9199 6.62C17.8185 6.37565 17.6243 6.18147 17.3799 6.08C17.2597 6.02876 17.1306 6.00158 16.9999 6H6.99994C6.73472 6 6.48037 6.10536 6.29283 6.29289C6.1053 6.48043 5.99994 6.73478 5.99994 7C5.99994 7.26522 6.1053 7.51957 6.29283 7.70711C6.48037 7.89464 6.73472 8 6.99994 8H14.5899L6.28994 16.29C6.19621 16.383 6.12182 16.4936 6.07105 16.6154C6.02028 16.7373 5.99414 16.868 5.99414 17C5.99414 17.132 6.02028 17.2627 6.07105 17.3846C6.12182 17.5064 6.19621 17.617 6.28994 17.71C6.3829 17.8037 6.4935 17.8781 6.61536 17.9289C6.73722 17.9797 6.86793 18.0058 6.99994 18.0058C7.13195 18.0058 7.26266 17.9797 7.38452 17.9289C7.50638 17.8781 7.61698 17.8037 7.70994 17.71L15.9999 9.41V17C15.9999 17.2652 16.1053 17.5196 16.2928 17.7071C16.4804 17.8946 16.7347 18 16.9999 18C17.2652 18 17.5195 17.8946 17.707 17.7071C17.8946 17.5196 17.9999 17.2652 17.9999 17V7C17.9984 6.86932 17.9712 6.74022 17.9199 6.62Z"
+                                            fill="#2D74BA" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    See Details
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="pic mb-24 mt-48">
+                            <a href="blogs-details.html">
+                                <img src="assets/media/blogs/cars.png" alt="car">
+                            </a>
+                        </div>
+                        <div class="text-block">
+                            <p class="mb-12">April 7, 2024</p>
+                            <a href="blogs.html" class="title">Eco-Friendly Rentals: Sustainability Solutions for Property
+                                Owners...</a>
+                            <p class="mb-24">Lorem ipsum dolor sit amet consectetur. Ac nisl lacus fermentum sollicitudin
+                                nascetur
+                                ipsum .</p>
+                            <a href="blogs.html" class="cus-btn-2">
+                                <span class="btn-text">
+                                    See Details
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M17.9199 6.62C17.8185 6.37565 17.6243 6.18147 17.3799 6.08C17.2597 6.02876 17.1306 6.00158 16.9999 6H6.99994C6.73472 6 6.48037 6.10536 6.29283 6.29289C6.1053 6.48043 5.99994 6.73478 5.99994 7C5.99994 7.26522 6.1053 7.51957 6.29283 7.70711C6.48037 7.89464 6.73472 8 6.99994 8H14.5899L6.28994 16.29C6.19621 16.383 6.12182 16.4936 6.07105 16.6154C6.02028 16.7373 5.99414 16.868 5.99414 17C5.99414 17.132 6.02028 17.2627 6.07105 17.3846C6.12182 17.5064 6.19621 17.617 6.28994 17.71C6.3829 17.8037 6.4935 17.8781 6.61536 17.9289C6.73722 17.9797 6.86793 18.0058 6.99994 18.0058C7.13195 18.0058 7.26266 17.9797 7.38452 17.9289C7.50638 17.8781 7.61698 17.8037 7.70994 17.71L15.9999 9.41V17C15.9999 17.2652 16.1053 17.5196 16.2928 17.7071C16.4804 17.8946 16.7347 18 16.9999 18C17.2652 18 17.5195 17.8946 17.707 17.7071C17.8946 17.5196 17.9999 17.2652 17.9999 17V7C17.9984 6.86932 17.9712 6.74022 17.9199 6.62Z"
+                                            fill="#2D74BA" />
+                                    </svg>
+                                </span>
+                                <span>
+                                    See Details
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M18.0098 6.62C17.9083 6.37565 17.7141 6.18147 17.4698 6.08C17.3496 6.02876 17.2205 6.00158 17.0898 6H7.08978C6.82457 6 6.57021 6.10536 6.38268 6.29289C6.19514 6.48043 6.08978 6.73478 6.08978 7C6.08978 7.26522 6.19514 7.51957 6.38268 7.70711C6.57021 7.89464 6.82457 8 7.08978 8H14.6798L6.37978 16.29C6.28605 16.383 6.21166 16.4936 6.16089 16.6154C6.11012 16.7373 6.08398 16.868 6.08398 17C6.08398 17.132 6.11012 17.2627 6.16089 17.3846C6.21166 17.5064 6.28605 17.617 6.37978 17.71C6.47275 17.8037 6.58335 17.8781 6.70521 17.9289C6.82707 17.9797 6.95777 18.0058 7.08978 18.0058C7.22179 18.0058 7.3525 17.9797 7.47436 17.9289C7.59622 17.8781 7.70682 17.8037 7.79978 17.71L16.0898 9.41V17C16.0898 17.2652 16.1951 17.5196 16.3827 17.7071C16.5702 17.8946 16.8246 18 17.0898 18C17.355 18 17.6094 17.8946 17.7969 17.7071C17.9844 17.5196 18.0898 17.2652 18.0898 17V7C18.0882 6.86932 18.061 6.74022 18.0098 6.62Z" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--title start  -->
+    <!--Footer-start -->
+    <footer class="pt-40">
+        <div class="container-fluid">
+            <div class="row mb-16 row-gap-4">
+                <div class="col-lg-3">
+                    <div class="txt-block">
+                        <a href="index.html">
+                            <img src="assets/media/footer/logo.png" alt="logo">
+                            <img src="assets/media/footer/Frame-173.png" alt="Frame">
+                        </a>
+                    </div>
+                    <p class="mb-32">Lorem ipsum dolor sit amet consectetur. Tellus varius senectus quis tellus ipsum
+                        nunc
+                        dictum sed. Nunc nam neque aliquam quis purus.</p>
+                    <h6 class="white mb-16">Subscribe To Our Newsletter</h6>
+                    <form action="index.html" class="newsletter-form">
+                        <input type="email" name="email" id="eMail" class="form-input"
+                            placeholder=" Your email address">
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_383_5670)">
+                                    <path
+                                        d="M19.8284 0.171647C19.6626 0.00586635 19.414 -0.0451101 19.1965 0.041921L0.36834 7.57308C0.152911 7.65925 0.00865304 7.86441 0.00037181 8.09632C-0.00787036 8.32819 0.121504 8.54308 0.330254 8.64433L7.75477 12.2451L11.3556 19.6697C11.4538 19.8722 11.6589 19.9999 11.8827 19.9999C11.8896 19.9999 11.8966 19.9998 11.9036 19.9995C12.1355 19.9913 12.3407 19.847 12.4268 19.6316L19.9581 0.803599C20.0451 0.585943 19.9941 0.337389 19.8284 0.171647ZM2.0349 8.16862L16.9812 2.19016L8.07383 11.0974L2.0349 8.16862ZM11.8313 17.9651L8.90246 11.926L17.8099 3.01875L11.8313 17.9651Z"
+                                        fill="#2D74BA" />
+                                </g>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-5 col-md-8 offset-lg-1">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="links-block">
+                                <h6 class="mb-32">Quick Links</h6>
+                                <ul class="unstyled">
+                                    <li class="mb-12">
+                                        <a href="index.html">Home </a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="links-block">
+                                <h6 class="mb-32">Information</h6>
+                                <ul class="unstyled">
+                                    <li class="mb-12">
+                                        <a href="rental.html">Rentals</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="book-now.html">Booking Form</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="booking.html">Booking Details</a>
+                                    </li>
+                                    <li class="mb-12">
+                                        <a href="index.html">Brands</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="links-block">
+                        <div class="mb-24">
+                            <h6 class="mb-32">Contact info</h6>
+                        </div>
+                        <ul class="unstyled">
+                            <li class="mb-16">
+                                <div class="contact">
+                                    <img src="assets/media/footer/uil-outgoing-call.png" alt="call-logo">
+                                    <a href="tel:+12345678">+123 (4567) -890</a>
+                                </div>
+                            </li>
+                            <li class="mb-16">
+                                <div class="contact">
+                                    <img src="assets/media/footer/uil-map-marker.png" alt="logo">
+                                    <p>Main Street, New Jersey</p>
+                                </div>
+                            </li>
+                            <li class="mb-24">
+                                <div class="contact">
+                                    <img src="assets/media/footer/uil-envelope.png" alt="logo">
+                                    <a href="mailto:example@company.com">example@company.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5>Follow us!</h5>
+                        <div class="social-icons mb-12">
+                            <ul class="d-flex unstyled gap-12">
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Instagram.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Twitter.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Dribbble.png" alt="logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="assets/media/footer/Linkedin.png " alt="logo">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line  bg-light-gray"></div>
+            <p class="mt-32 pb-32 text-center">@2025 All Rights Copyright <span class="fw-700 color-sec">RapidRide.</span>
+                Design & Developed By UIPARADOX</p>
+        </div>
+    </footer> 
+    <!--Footer-end -->
+
+    <!-- Back To Top Start -->
+    <button class="scrollToTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- Mobile Menu Start -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="assets/media/user/logo.png" alt=""></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:example@company.com">example@company.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+12345678">+123 (4567) -890</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__social">
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu End -->
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/smooth-scrollbar.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

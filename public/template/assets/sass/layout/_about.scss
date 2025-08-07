@@ -1,0 +1,78 @@
+.about {
+    .txt {
+        h2 {
+            span {
+                color: $accent-1;
+            }
+        }
+        h6 {
+            margin-bottom: 12px;
+            text-align: center;
+            color: $black-2;
+            @include media-query(390px){
+                text-align: start;
+            }
+        }
+        .offers {
+            padding-left: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 23px;
+            justify-content: center;
+            @include media-query(575px){
+                gap: 13px;
+            @include media-query(390px){
+                flex-direction: column;
+            }
+            }
+            li{
+                gap: 12px;
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+    .design {
+        .txt-block {
+            padding-left: 20px;
+            h2 {
+                color: $black-2;
+            }
+            p {
+                color:  $light-gray;
+            }
+            .pic {
+                gap: 15px;
+                display: flex;
+                img {
+                    gap: 12px;
+                    width: 27px;
+                    height: 24px;
+                }
+                .text {
+                    h6 {
+                        margin-bottom: 4px;
+                        color: $black-2;
+                    }
+                }
+            }
+            .icon {
+                gap: 15px;
+                display: flex;
+                img {
+                    width: 24px;
+                    height: 24.005px;
+                }
+                .text {
+                    h6 {
+                        margin-bottom: 4px;
+                        color: $black-2;
+                    }
+                    p {
+                        color:  $light-gray;
+                    }
+                }
+            }
+        }
+    }
+}
